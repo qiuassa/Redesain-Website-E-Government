@@ -1,4 +1,4 @@
-<!-- Tombol Aksesibilitas -->
+<!-- Tombol Pemicu Aksesibilitas (Floating Button Top Right) -->
 <div class="absolute top-4 right-4 z-50">
   <button id="accessibility-btn" type="button" title="Fitur Aksesibilitas" class="w-10 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-xl flex flex-col items-center justify-center border border-amber-600 text-xs shadow-lg transition-all active:scale-95 cursor-pointer">
     <i class="ph ph-person text-lg font-bold pointer-events-none"></i>
@@ -12,26 +12,26 @@
     <h3 class="font-black text-slate-800 text-xs flex items-center gap-1.5">
       <i class="ph ph-universal-access text-base text-rose-700"></i> Fitur Aksesibilitas
     </h3>
-    <button id="close-accessibility" class="text-slate-400 hover:text-slate-700 font-bold text-sm cursor-pointer">&times;</button>
+    <button id="close-accessibility" type="button" class="text-slate-400 hover:text-slate-700 font-bold text-sm cursor-pointer">&times;</button>
   </div>
 
   <div>
     <label class="text-[10px] font-extrabold text-slate-600 uppercase block mb-1">Ukuran Teks</label>
     <div class="flex gap-1.5">
-      <button id="font-size-down" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-1 rounded border border-slate-300">A-</button>
-      <button id="font-size-reset" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-1 rounded border border-slate-300">Normal</button>
-      <button id="font-size-up" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-1 rounded border border-slate-300">A+</button>
+      <button id="font-size-down" type="button" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-1 rounded border border-slate-300 cursor-pointer">A-</button>
+      <button id="font-size-reset" type="button" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-1 rounded border border-slate-300 cursor-pointer">Normal</button>
+      <button id="font-size-up" type="button" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-1 rounded border border-slate-300 cursor-pointer">A+</button>
     </div>
   </div>
 
   <div class="pt-2 border-t border-slate-100">
-    <button id="toggle-contrast" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-1.5 rounded border border-slate-300 flex items-center justify-center gap-1.5">
-      <i class="ph ph-moon-stars text-sm"></i> Kontras Tinggi / Dark
+    <button id="toggle-contrast" type="button" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-1.5 rounded border border-slate-300 flex items-center justify-center gap-1.5 cursor-pointer">
+      <i class="ph ph-moon-stars text-sm"></i> Mode Gelap / Kontras
     </button>
   </div>
 
   <div class="pt-2 border-t border-slate-100">
-    <button id="toggle-speech" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-1.5 rounded border border-slate-300 flex items-center justify-center gap-1.5">
+    <button id="toggle-speech" type="button" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-1.5 rounded border border-slate-300 flex items-center justify-center gap-1.5 cursor-pointer">
       <i class="ph ph-speaker-high text-sm"></i> Pembaca Teks Suara
     </button>
     <p id="speech-status" class="text-[9px] text-slate-500 font-medium italic mt-1">Status: Nonaktif</p>

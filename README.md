@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modul Perkuliahan Desain Web
 
 Panduan kerja kelompok 3 orang untuk mata kuliah **Pengenalan Workshop Desain Web** — D3 Informatika, Semester 1.
@@ -519,3 +520,7 @@ Gunakan checklist ini **sebelum presentasi** atau **sebelum deadline pengumpulan
 ---
 
 *Dokumen ini dikhususkan untuk mahasiswa D3 Informatika — Modul Perkuliahan Desain Web. Tidak untuk penilaian rubrik — gunakan sebagai panduan kerja.*
+=======
+# Redesain-Website-E-Government
+Repository ini dibuat untuk memenuhi tugas kuliah Redesain Web. Proyek ini berfokus pada perancangan ulang tampilan dan antarmuka website agar lebih menarik, modern, responsif, dan mudah digunakan. Proses redesain dilakukan dengan memperhatikan aspek UI/UX untuk meningkatkan kenyamanan pengguna serta memperbaiki tata letak dan navigasi website.
+>>>>>>> 2ff9f922eaae6fa49cb5aafd02dfd868c3410e41
