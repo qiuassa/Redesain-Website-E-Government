@@ -1,0 +1,45 @@
+/* Custom CSS untuk Aksesibilitas & Rotasi Gambar 3D */
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.fan-container {
+  perspective: 1200px;
+}
+
+.fan-card-left-2 { transform: rotate(-18deg) translateY(15px) translateX(20px); }
+.fan-card-left-1 { transform: rotate(-8deg) translateY(5px) translateX(10px); }
+.fan-card-center { transform: scale(1.05) translateY(-10px); z-index: 30; }
+.fan-card-right-1 { transform: rotate(8deg) translateY(5px) translateX(-10px); }
+
+.fan-card-left-2:hover,
+.fan-card-left-1:hover,
+.fan-card-center:hover,
+.fan-card-right-1:hover {
+  transform: scale(1.1) translateY(-25px) rotate(0deg);
+  z-index: 50;
+}
+
+/* --- Class Tambahan Aksesibilitas --- */
+body.high-contrast {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+body.high-contrast section,
+body.high-contrast header,
+body.high-contrast div,
+body.high-contrast footer {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+  border-color: #333333 !important;
+}
+
+body.high-contrast a,
+body.high-contrast button {
+  color: #facc15 !important;
+}
+
+body.font-size-sm { font-size: 85% !important; }
+body.font-size-lg { font-size: 120% !important; }
