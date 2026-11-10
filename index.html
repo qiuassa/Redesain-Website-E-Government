@@ -1,39 +1,92 @@
-<!-- Tombol Pemicu Aksesibilitas (Floating Button Top Right) -->
-<div class="absolute top-4 right-4 z-50">
-  <button id="accessibility-btn" type="button" title="Fitur Aksesibilitas" class="w-10 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-xl flex flex-col items-center justify-center border border-amber-600 text-xs shadow-lg transition-all active:scale-95 cursor-pointer">
-    <i class="ph ph-person text-lg font-bold pointer-events-none"></i>
-    <span class="text-[9px] font-black uppercase tracking-tighter pointer-events-none">Akses</span>
-  </button>
-</div>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Resmi Pemerintah Kabupaten Brebes</title>
 
-<!-- Modal Pop-Up Aksesibilitas -->
-<div id="accessibility-modal" class="hidden absolute top-18 right-4 z-50 w-72 bg-white border border-slate-300 rounded-2xl shadow-2xl p-4 text-left space-y-3">
-  <div class="flex items-center justify-between border-b border-slate-200 pb-2">
-    <h3 class="font-black text-slate-800 text-xs flex items-center gap-1.5">
-      <i class="ph ph-universal-access text-base text-rose-700"></i> Fitur Aksesibilitas
-    </h3>
-    <button id="close-accessibility" type="button" class="text-slate-400 hover:text-slate-700 font-bold text-sm cursor-pointer">&times;</button>
-  </div>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <div>
-    <label class="text-[10px] font-extrabold text-slate-600 uppercase block mb-1">Ukuran Teks</label>
-    <div class="flex gap-1.5">
-      <button id="font-size-down" type="button" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-1 rounded border border-slate-300 cursor-pointer">A-</button>
-      <button id="font-size-reset" type="button" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-1 rounded border border-slate-300 cursor-pointer">Normal</button>
-      <button id="font-size-up" type="button" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-1 rounded border border-slate-300 cursor-pointer">A+</button>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="dashboard-wrapper">
+        <header class="navbar">
+            <div class="logo-container">
+                <img class="logo-img" src="./assets/logo-brebes.webp" alt="Lambang Kabupaten Brebes">
+                <span class="tag-kabupaten">KABUPATEN BREBES</span>
+            </div>
+
+            <nav class="nav-menu" aria-label="Navigasi utama">
+                <a href="#mengenal" class="nav-item active">MENGENAL BREBES <span class="chevron" aria-hidden="true"></span></a>
+                <a href="#layanan" class="nav-item">LAYANAN PUBLIK <span class="chevron" aria-hidden="true"></span></a>
+                <a href="#informasi" class="nav-item">INFORMASI PUBLIK <span class="chevron" aria-hidden="true"></span></a>
+                <a href="#transparansi" class="nav-item">TRANSPARANSI <span class="chevron" aria-hidden="true"></span></a>
+            </nav>
+
+            <div class="toggle-container">
+                <button class="toggle-switch" id="theme-toggle" type="button" aria-label="Aktifkan mode gelap" aria-pressed="false"></button>
+            </div>
+        </header>
+
+        <main class="hero-container" id="mengenal">
+            <h1 class="brand-title">BREBES</h1>
+
+            <div class="subtitle-divider">
+                <span class="line"></span>
+                <p class="subtitle-text">PORTAL RESMI PEMERINTAH KABUPATEN BREBES</p>
+                <span class="line"></span>
+            </div>
+
+            <form class="search-bar" action="https://www.google.com/search" method="get" role="search">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                    <circle cx="10.8" cy="10.8" r="6.3" />
+                    <path d="m16 16 4.5 4.5" />
+                </svg>
+                <input type="search" name="q" aria-label="Cari informasi" placeholder="Cari layanan, transparansi, informasi publik daerah Brebes...">
+                <button class="btn-cari" type="submit">CARI</button>
+            </form>
+
+            <div class="gallery-cards">
+                <div class="card card-left-outer">
+                    <img src="./assets/gedung-ilustrasi.jpg" alt="Ilustrasi gedung Kementerian BUMN di Jakarta">
+                    <div class="card-info">
+                        <span class="card-tag">ILUSTRASI PEMERINTAHAN</span>
+                        <h4 class="card-name">GEDUNG KPT BREBES</h4>
+                    </div>
+                </div>
+
+                <div class="card card-left-inner">
+                    <img src="./assets/monumen-ilustrasi.jpg" alt="Ilustrasi tugu Monas di Jakarta">
+                    <div class="card-info">
+                        <span class="card-tag">ILUSTRASI LANDMARK</span>
+                        <h4 class="card-name">TUGU BAWANG BREBES</h4>
+                    </div>
+                </div>
+
+                <div class="card card-right-inner">
+                    <img src="./assets/kebun-teh-kaligua.jpg" alt="Hamparan perkebunan teh Kaligua di Brebes">
+                    <div class="card-info">
+                        <span class="card-tag">WISATA ALAM</span>
+                        <h4 class="card-name">KEBUN TEH KALIGUA</h4>
+                    </div>
+                </div>
+
+                <div class="card card-right-outer">
+                    <img src="./assets/curug-ilustrasi.jpg" alt="Ilustrasi Curug Sewu, air terjun di Jawa Tengah">
+                    <div class="card-info">
+                        <span class="card-tag">ILUSTRASI AIR TERJUN</span>
+                        <h4 class="card-name">CURUG PUTRI</h4>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
-  </div>
 
-  <div class="pt-2 border-t border-slate-100">
-    <button id="toggle-contrast" type="button" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-1.5 rounded border border-slate-300 flex items-center justify-center gap-1.5 cursor-pointer">
-      <i class="ph ph-moon-stars text-sm"></i> Mode Gelap / Kontras
-    </button>
-  </div>
-
-  <div class="pt-2 border-t border-slate-100">
-    <button id="toggle-speech" type="button" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-1.5 rounded border border-slate-300 flex items-center justify-center gap-1.5 cursor-pointer">
-      <i class="ph ph-speaker-high text-sm"></i> Pembaca Teks Suara
-    </button>
-    <p id="speech-status" class="text-[9px] text-slate-500 font-medium italic mt-1">Status: Nonaktif</p>
-  </div>
-</div>
+    <script src="./theme.js" defer></script>
+</body>
+</html>
